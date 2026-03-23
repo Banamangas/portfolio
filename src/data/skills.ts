@@ -5,8 +5,10 @@ export interface SkillsData {
 }
 
 export const skills: SkillsData = {
-  languages: ['Python', 'SQL', 'Bash'],
-  frameworks: ['FastAPI', 'Airflow', 'dbt'],
-  data: ['PostgreSQL', 'PostGIS', 'Pandas', 'SQLite'],
-  infra: ['Docker', 'GitHub Actions'],
+  languages: ['Python', 'SQL', 'Bash', 'HTML', 'CSS', 'JavaScript'],
+  frameworks: ['FastAPI', 'Flask', 'Selenium', 'Scikit-learn', 'TensorFlow/Keras'],
+  data: ['MySQL', 'SQLite', 'Pandas', 'NumPy'],
+  tools: ['Microsoft Office', 'Google Workspace', 'Power BI'],
+  version_control: ['Git', 'GitHub'],
+  infra: ['GitHub Actions', 'Linux', 'Windows'],
 };
