@@ -4,17 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project State
 
-This repository currently contains **planning and architecture documentation only** — the Astro project has not been scaffolded yet. Before any development tasks, check whether `package.json` exists. If it does not, the project needs to be initialized per `SETUP.md`.
+The Astro project is **fully scaffolded**. Run `npm install` then `npm run dev` to start developing.
 
-## Initializing the Project
-
-```bash
-npm create astro@latest . --template minimal
-npx astro add tailwind sitemap
-npm install @tailwindcss/typography sharp
-```
-
-## Commands (once initialized)
+## Commands
 
 ```bash
 npm run dev       # Dev server at http://localhost:4321
@@ -50,7 +42,26 @@ All pages use `src/layouts/BaseLayout.astro` which provides the HTML shell, glob
 - `public/resume.pdf` — served as a static file
 
 ### Dark Mode
-Tailwind dark mode is class-based (configured in `tailwind.config.mjs`). The `ThemeToggle` component manages the `dark` class on `<html>` and persists preference in `localStorage`.
+Tailwind dark mode is class-based (`dark:` prefix). The variant is defined in `src/styles/global.css`. The `ThemeToggle` component manages the `dark` class on `<html>` and persists preference in `localStorage`.
+
+## Git Workflow
+
+### Branch Naming
+- `feat/` — new features
+- `fix/` — bug fixes
+- `refacto/` — refactoring
+- `chore/` — tooling, dependencies, config
+- `docs/` — documentation only
+
+### Commit Messages
+Use the matching prefix: `feat:`, `fix:`, `refacto:`, `chore:`, `docs:`
+
+### Pull Requests
+- Always use `gh pr create` — **never push directly to main**
+- Verify CI passes before considering a task done
+
+### General Rules
+- Never commit directly to `main`
 
 ## Planning Documents
 - `SETUP.md` — step-by-step scaffold and configuration guide
