@@ -8,7 +8,7 @@
   --border: #30363d;
   --text: #e6edf3;
   --muted: #7d8590;
-  --body: #c9d1d9;
+  --text-secondary: #c9d1d9;
   --green: #3fb950;
   --cyan: #79c0ff;
   --purple: #d2a8ff;
@@ -25,7 +25,6 @@
   }
 
   body {
-    background-color: var(--bg);
     color: var(--text);
   }
 
@@ -40,7 +39,7 @@
 
   /* Prose overrides for terminal theme */
   .prose {
-    --tw-prose-body: var(--body);
+    --tw-prose-body: var(--text-secondary);
     --tw-prose-headings: var(--text);
     --tw-prose-links: var(--cyan);
     --tw-prose-bold: var(--text);
@@ -50,7 +49,7 @@
     --tw-prose-captions: var(--muted);
     --tw-prose-counters: var(--muted);
     --tw-prose-bullets: var(--muted);
-    color: var(--body);
+    color: var(--text-secondary);
   }
 
   code {
