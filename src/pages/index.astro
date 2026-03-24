@@ -67,7 +67,7 @@ const remaining = featured.length > 3 ? `  +${featured.length - 3} more` : '';
   {featured.length > 0 && (
     <section style="padding:2rem 0;">
       <div style="color:var(--muted);font-size:0.6875rem;letter-spacing:0.15em;text-transform:uppercase;font-family:'JetBrains Mono',monospace;margin-bottom:1.25rem;">// featured projects</div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;">
         {featured.map((p) => (
           <ProjectCard
             slug={p.id}
