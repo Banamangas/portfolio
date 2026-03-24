@@ -6,6 +6,8 @@ interface Props {
 }
 
 const { entries } = Astro.props;
+const currentPath = Astro.url.pathname;
+
 
 const dotColors: Record<string, string> = {
   green: 'var(--green)',
@@ -31,6 +33,7 @@ function formatPeriod(period: string): string {
 
   {entries.map((entry) => {
     const dotColor = dotColors[entry.color ?? 'cyan'];
+    const lines = entry.description.split('\n');
     return (
       <div style="display:flex;gap:18px;align-items:flex-start;margin-bottom:28px;position:relative;">
         <!-- Dot -->
@@ -48,7 +51,9 @@ function formatPeriod(period: string): string {
               {entry.location}
             </div>
           )}
-          <div style="color:var(--muted);font-size:0.75rem;line-height:1.6;">{entry.description}</div>
+          {currentPath === '/resume' && (
+            <div style="color:var(--muted);font-size:0.75rem;line-height:1.6;">{lines.map((line) => <li style="margin-bottom:4px;margin-left:20px;list-style-type:disc;">{line}</li>)}</div>
+          )}
         </div>
       </div>
     );

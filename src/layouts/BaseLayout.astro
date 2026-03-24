@@ -27,14 +27,16 @@ const { title, description = 'Data Science & Engineering Portfolio' } = Astro.pr
     <nav style="background:var(--surface-2);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:50;">
       <div style="max-width:56rem;margin:0 auto;padding:0 1.5rem;height:3rem;display:flex;align-items:center;gap:1rem;">
         <!-- Traffic light dots -->
-        <div style="display:flex;gap:6px;flex-shrink:0;">
-          <a href="/" style="width:12px;height:12px;border-radius:50%;background:#ff5f57;display:block;" title="Home"></a>
-          <div style="width:12px;height:12px;border-radius:50%;background:#febc2e;"></div>
-          <div style="width:12px;height:12px;border-radius:50%;background:#28c840;"></div>
-        </div>
+        <a href="/" title="Home">
+          <div style="display:flex;gap:6px;flex-shrink:0;">
+            <div style="width:12px;height:12px;border-radius:50%;background:#ff5f57;display:block;"></div>
+            <div style="width:12px;height:12px;border-radius:50%;background:#febc2e;"></div>
+            <div style="width:12px;height:12px;border-radius:50%;background:#28c840;"></div>
+          </div>
+        </a>
         <!-- Path breadcrumb -->
-        <div style="flex:1;text-align:center;color:var(--muted);font-size:0.6875rem;font-family:'JetBrains Mono',monospace;letter-spacing:0.04em;">
-          ~/portfolio
+        <div style="flex:1;text-align:center;">
+          <a href="/" style="color:var(--muted);font-size:0.6875rem;font-family:'JetBrains Mono',monospace;letter-spacing:0.04em;"title="Home">~/portfolio</a>
         </div>
         <!-- Nav links -->
         <div style="display:flex;gap:1.5rem;flex-shrink:0;">
