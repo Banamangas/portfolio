@@ -13,28 +13,28 @@ const education = timeline.filter((e) => e.color === 'purple');
 
   <!-- Header -->
   <div style="padding:2rem 0 1.5rem;border-bottom:1px solid var(--border);display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:12px;">
-    <div style="display:flex;flex-direction:column;justify-content:flex-end;">
-      <div style="color:var(--muted);font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;font-family:'JetBrains Mono',monospace;margin-bottom:8px;">// cat resume.md</div>
-      <h1 style="color:var(--text);font-size:1.75rem;font-weight:700;font-family:'JetBrains Mono',monospace;letter-spacing:-0.02em;margin-bottom:4px;">Antoine Deval</h1>
-      <p style="color:var(--cyan);font-size:0.875rem;font-family:'JetBrains Mono',monospace;">Data &amp; Web specialist</p>
-    </div>
-    <div style="display:flex;flex-direction:column;align-items:center;gap:12px;flex-shrink:0;">
-      <img
-        src="/images/profile.jpg"
-        alt="Antoine Deval"
-        style="width:250px;height:250px;border-radius:50%;object-fit:cover;border:2px solid var(--border);"
-        onerror="this.style.display='none'"
-      />
+    <div style="display:flex;flex-direction:column;justify-content:flex-end;gap:16px;">
+      <div>
+        <div style="color:var(--muted);font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;font-family:'JetBrains Mono',monospace;margin-bottom:8px;">// cat resume.md</div>
+        <h1 style="color:var(--text);font-size:1.75rem;font-weight:700;font-family:'JetBrains Mono',monospace;letter-spacing:-0.02em;margin-bottom:4px;">Antoine Deval</h1>
+        <p style="color:var(--cyan);font-size:0.875rem;font-family:'JetBrains Mono',monospace;">Data &amp; Web specialist</p>
+      </div>
       <a
         href="/resume.pdf"
         download
-        style="background:#238636;color:#fff;padding:8px 18px;border-radius:6px;font-size:0.75rem;font-family:'JetBrains Mono',monospace;text-decoration:none;transition:background 0.15s;"
+        style="align-self:flex-start;background:#238636;color:#fff;padding:8px 18px;border-radius:6px;font-size:0.75rem;font-family:'JetBrains Mono',monospace;text-decoration:none;transition:background 0.15s;"
         onmouseover="this.style.background='#2ea043'"
         onmouseout="this.style.background='#238636'"
       >
         ↓ Download PDF
       </a>
     </div>
+    <img
+      src="/images/profile.jpg"
+      alt="Antoine Deval"
+      style="width:250px;height:250px;border-radius:50%;object-fit:cover;border:2px solid var(--border);flex-shrink:0;"
+      onerror="this.style.display='none'"
+    />
   </div>
 
   <!-- Experience -->
