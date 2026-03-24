@@ -32,14 +32,21 @@ Great Buildings are one of the core mechanics in FoE. Knowing how much it will c
 | `/gb_level <name> <level>` | Level cost and rewards with Previous/Next buttons |
 | `/invest <gb> <from> <to> [ratio]` | FP leveling cost breakdown across a level range |
 
+<figure>                                                                                  
+    <img src="/images/projects/discord-bot-invest-command.png" alt="Use of the /invest command on Discord" />                       
+    <figcaption>Use of the /invest command on Discord</figcaption>
+</figure>
+
 All GB names support autocomplete with fuzzy matching.
 
 ## Leveling Cost Calculator
 
 The `/invest` command shows what it costs a GB owner to level across a range, accounting for the FP that investors contribute:
 
+```
 FPs Saved = Sum of all position reward FPs × Ratio
 User Cost = Total Level Cost − FPs Saved
+```
 
 **FPs Saved** is the total FP contributed by investors — each position's reward FP multiplied by the ratio, representing what investors put in to secure that position at the current market rate. **User Cost** is what the owner pays net after those contributions. Results are colour-coded in Discord embeds (green when investor contributions exceed total cost, red otherwise). The FP ratio defaults to 1.9 but can be overridden via a Discord modal (0.0–2.0 range). Bonus rewards per position (blueprints, medals) are also totalled across the full level range.
 
