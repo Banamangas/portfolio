@@ -18,15 +18,23 @@ const education = timeline.filter((e) => e.color === 'purple');
       <h1 style="color:var(--text);font-size:1.75rem;font-weight:700;font-family:'JetBrains Mono',monospace;letter-spacing:-0.02em;margin-bottom:4px;">Antoine Deval</h1>
       <p style="color:var(--cyan);font-size:0.875rem;font-family:'JetBrains Mono',monospace;">Data &amp; Web specialist</p>
     </div>
-    <a
-      href="/resume.pdf"
-      download
-      style="background:#238636;color:#fff;padding:8px 18px;border-radius:6px;font-size:0.75rem;font-family:'JetBrains Mono',monospace;text-decoration:none;transition:background 0.15s;flex-shrink:0;"
-      onmouseover="this.style.background='#2ea043'"
-      onmouseout="this.style.background='#238636'"
-    >
-      ↓ Download PDF
-    </a>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:12px;flex-shrink:0;">
+      <img
+        src="/images/profile.jpg"
+        alt="Antoine Deval"
+        style="width:80px;height:80px;border-radius:50%;object-fit:cover;border:2px solid var(--border);"
+        onerror="this.style.display='none'"
+      />
+      <a
+        href="/resume.pdf"
+        download
+        style="background:#238636;color:#fff;padding:8px 18px;border-radius:6px;font-size:0.75rem;font-family:'JetBrains Mono',monospace;text-decoration:none;transition:background 0.15s;"
+        onmouseover="this.style.background='#2ea043'"
+        onmouseout="this.style.background='#238636'"
+      >
+        ↓ Download PDF
+      </a>
+    </div>
   </div>
 
   <!-- Experience -->
