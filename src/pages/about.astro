@@ -21,20 +21,30 @@ const contactLinks: ContactLink[] = [
   <section style="padding:2.5rem 0 2rem;border-bottom:1px solid var(--border);">
     <div style="color:var(--muted);font-size:0.6875rem;letter-spacing:0.15em;text-transform:uppercase;font-family:'JetBrains Mono',monospace;margin-bottom:10px;">// cat about.md</div>
     <h1 style="color:var(--text);font-size:1.75rem;font-weight:700;font-family:'JetBrains Mono',monospace;letter-spacing:-0.02em;margin-bottom:12px;">Antoine DEVAL</h1>
-    <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.8;max-width:540px;">
+    <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.8;max-width:600px;margin-top:10px;">
       Data & Web specialist. I work at the intersection of infrastructure and insight — building the pipelines, APIs, and tools that make data useful. I care about clean systems, reproducible results, and shipping things that actually run in production.
     </p>
-    <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.8;max-width:540px;">
+    <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.8;max-width:600px;margin-top:10px;">
       I always loved mathematics, numbers and using data to understand the world. Building tools that are useful and have a direct impact on people that use them is how I approach building. 
     </p>
-    <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.8;max-width:540px;">
+    <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.8;max-width:600px;margin-top:10px;">
       Optimizing, automating, is part of who I am. Repetitiveness is my enemy, if I can get rid of it by automating a process, I will.
+    </p>
+    <p style="color:var(--text-secondary);font-size:0.9375rem;line-height:1.8;max-width:600px;margin-top:10px;">
+      I'm always looking for new challenges and opportunities to grow. If you have something in mind, feel free to <a href="mailto:antoine.deval2@proton.me" style="color:var(--cyan);">reach out</a>!
     </p>
   </section>
 
   <!-- Timeline -->
   <section style="padding:2rem 0;border-bottom:1px solid var(--border);">
     <div style="color:var(--muted);font-size:0.6875rem;letter-spacing:0.15em;text-transform:uppercase;font-family:'JetBrains Mono',monospace;margin-bottom:1.25rem;">// git log --oneline --career</div>
+    <div style="margin-bottom: 1.25rem;">
+      <a href="/resume" title="Detailed resume" rel="noopener noreferrer"
+             style="background:var(--surface);border:1px solid var(--border);color:var(--cyan);padding:7px 16px;border-radius:6px;font-size:0.75rem;font-family:'JetBrains Mono',monospace;text-decoration:none;transition:border-color 0.15s;"
+             onmouseover="this.style.borderColor='var(--cyan)'" onmouseout="this.style.borderColor='var(--border)'">
+            ⬡ Detailed resume
+      </a>
+    </div>
     <Timeline entries={timeline} />
   </section>
 
